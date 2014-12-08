@@ -4,7 +4,8 @@ if exist deploy (
 	del /S /Q deploy >nul
 	rmdir /S /Q deploy >nul
 )
-xcopy /Y Release\*.exe deploy\
+xcopy /C /Y debug\*.exe deploy\
+xcopy /C /Y release\*.exe deploy\
 
 if "%1" == "" (
 	windeployqt deploy
