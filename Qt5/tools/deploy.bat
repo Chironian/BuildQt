@@ -1,4 +1,4 @@
-rem @echo off
+@echo off
 if exist deploy (
 	echo delete "deploy" folder
 	del /S /Q deploy >nul
